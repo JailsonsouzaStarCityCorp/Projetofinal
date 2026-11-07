@@ -1,0 +1,39 @@
+== 1. Extração ==
+  [ok] WEGE3   via WEGE3.SA    745 linhas
+  [ok] EMBR3   via EMBJ3.SA    745 linhas
+  [ok] VALE3   via VALE3.SA    745 linhas
+  [ok] GGBR4   via GGBR4.SA    745 linhas
+  [ok] KLBN11  via KLBN11.SA   745 linhas
+  [ok] PETR4   via PETR4.SA    745 linhas
+  [ok] PRIO3   via PRIO3.SA    745 linhas
+  [ok] EGIE3   via EGIE3.SA    745 linhas
+  [ok] ITUB4   via ITUB4.SA    745 linhas
+  [ok] BBDC4   via BBDC4.SA    745 linhas
+  [ok] ABEV3   via ABEV3.SA    745 linhas
+  [ok] RENT3   via RENT3.SA    745 linhas
+== 2. Limpeza ==
+Linhas brutas: 8940
+Duplicados removidos: 0
+Nulos por coluna antes do tratamento: {'data': 0, 'ticker': 0, 'ticker_yahoo': 0, 'abertura': 0, 'maxima': 0, 'minima': 0, 'fechamento': 0, 'fechamento_ajustado': 0, 'volume': 0}
+Linhas sem data ou sem fechamento ajustado removidas: 0
+Linhas com preço <= 0 ou máxima < mínima removidas: 0
+Pregões com volume zero (mantidos e sinalizados): 3
+Linhas após limpeza e recorte 2021-01-01 a 2023-12-31: 8940
+== 3. Transformação ==
+ticker  retorno_acumulado  volatilidade_anual  drawdown_maximo
+ ABEV3             0.0257              0.2546          -0.3142
+ BBDC4            -0.0693              0.3138          -0.4605
+ EGIE3             0.2535              0.1876          -0.1765
+ EMBR3             1.6750              0.4682          -0.5827
+ GGBR4             0.3079              0.3556          -0.3393
+ ITUB4             0.2402              0.2883          -0.3587
+KLBN11            -0.0080              0.2662          -0.3930
+ PETR4             2.2869              0.3942          -0.3910
+ PRIO3             2.0832              0.4678          -0.3432
+ RENT3            -0.0025              0.3689          -0.3840
+ VALE3             0.1811              0.3390          -0.4134
+ WEGE3             0.0351              0.3283          -0.4951
+== 4. Modelagem ==
+dim_ativo: 12 | dim_data: 745 | fato_cotacao: 8940
+== 5. Carga ==
+CSVs gravados em data/processed/
