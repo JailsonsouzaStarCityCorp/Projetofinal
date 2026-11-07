@@ -42,7 +42,7 @@
 
 | Entrega | Link |
 |---|---|
-| 🚀 App em produção (Streamlit Cloud) | https://SEU-APP.streamlit.app |
+| 🚀 App em produção (Streamlit Cloud) | https://projetofinal-3fqbvhzrdk7bgrsk7uhmtn.streamlit.app |
 | 🎬 Vídeo pitch (3–5 min) | https://youtu.be/SEU-VIDEO |
 | 📋 Quadro Kanban (Trello) | https://trello.com/b/Nd92qOdp/projeto-final-bi-b3-performance-2021-2023 |
 
