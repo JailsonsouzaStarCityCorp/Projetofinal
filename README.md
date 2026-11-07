@@ -1,14 +1,50 @@
 # 📈 Performance de Ações na B3 (2021–2023): Data App de BI Financeiro
 
+
+
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
+
+
+
+
+![Streamlit](https://img.shields.io/badge/Streamlit-Data%20App-FF4B4B?logo=streamlit&logoColor=white)
+
+
+
+
+![Pandas](https://img.shields.io/badge/Pandas-ETL-150458?logo=pandas&logoColor=white)
+
+
+
+
+![Plotly](https://img.shields.io/badge/Plotly-Gr%C3%A1ficos-3F4F75?logo=plotly&logoColor=white)
+
+
+
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Supabase-4169E1?logo=postgresql&logoColor=white)
+
+
+
+
+![B3](https://img.shields.io/badge/Dados-B3%202021--2023-00A86B)
+
+
+
+
+![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-2ea44f)
+
+
+
 > **Projeto Avaliativo Final** · Visualização de Dados e Business Intelligence [T2] · Módulo 2, Semanas 13 e 14
 > **Linha 2: Performance de Mercado de Ações & Séries Temporais (B3)**
-> Autor: **[SEU NOME COMPLETO]** · [LinkedIn](https://linkedin.com/in/SEU-PERFIL)
+> Autor: **Jailson Silva** · [LinkedIn](https://www.linkedin.com/in/jailsonsilvaanalista) · [GitHub](https://github.com/JailsonsouzaStarCityCorp)
 
 | Entrega | Link |
 |---|---|
 | 🚀 App em produção (Streamlit Cloud) | https://SEU-APP.streamlit.app |
 | 🎬 Vídeo pitch (3–5 min) | https://youtu.be/SEU-VIDEO |
-| 📋 Quadro Kanban (Trello) | https://trello.com/b/SEU-QUADRO |
+| 📋 Quadro Kanban (Trello) | https://trello.com/b/Nd92qOdp/projeto-final-bi-b3-performance-2021-2023 |
 
 ---
 
@@ -188,8 +224,8 @@ O resumo de cada execução (contagens de nulos, duplicados e linhas) é salvo e
 ## 7. Como executar
 
 ```bash
-git clone https://github.com/SEU-USUARIO/SEU-REPO.git
-cd SEU-REPO
+git clone https://github.com/JailsonsouzaStarCityCorp/Projetofinal.git
+cd Projetofinal
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
@@ -212,14 +248,13 @@ streamlit run app.py
 
 ## 8. Principais achados
 
-> Preencha esta seção **depois** de rodar o ETL com os dados reais. Os textos de insight de cada aba
-> são calculados automaticamente e servem de base.
+*Janela completa: 04/01/2021 a 28/12/2023 (745 pregões). Valores arredondados; os números exatos são recalculados no app conforme os filtros.*
 
-- **Rentabilidade:** …
-- **Risco x retorno:** …
-- **Caudas de risco:** …
-- **Resiliência (drawdown):** …
-- **Tendência (médias móveis):** …
+- **Rentabilidade (Base 100):** a carteira de pesos iguais teria rendido cerca de **+58%**, mas o ganho foi concentrado. **PETR4 (+229%)**, **PRIO3 (+208%)** e **EMBR3 (+168%)** responderam pela maior parte do resultado. A mediana dos 12 ativos foi de apenas **+21%**, e **BBDC4 (−7%)**, **KLBN11 (−1%)** e **RENT3 (0%)** terminaram no zero a zero ou abaixo.
+- **Setores:** Petróleo e Energia liderou (média de +154%), seguido de Bens Industriais (+86%). Materiais Básicos (+16%), Financeiro (+9%) e Consumo (+1%) ficaram bem atrás.
+- **Risco x retorno:** pelo Sharpe empírico (retorno anualizado ÷ volatilidade), **PETR4** teve a melhor relação (≈ 1,3), seguida de PRIO3 e EMBR3. EMBR3 e PRIO3 também foram os papéis mais voláteis (≈ 47% a.a.).
+- **Resiliência (drawdown):** **EGIE3** foi o ativo mais defensivo, com a menor volatilidade (≈ 19% a.a.) e a menor queda a partir do topo (−18%). As quedas mais profundas foram de **EMBR3 (−58%)**, **WEGE3 (−50%)** e **BBDC4 (−46%)**.
+- **Leitura executiva:** retornos elevados vieram acompanhados de alta volatilidade e quedas intermediárias relevantes; a seleção de ativos pesou mais que a média da carteira. Estes são resultados descritivos do período e não indicam causa nem desempenho futuro.
 
 ### Limitações e rigor metodológico
 - Análise **descritiva** de um recorte histórico de 3 anos; os resultados não se generalizam para outros períodos.
@@ -231,7 +266,7 @@ streamlit run app.py
 ---
 
 ## 9. Gestão do projeto
-- **Kanban (Trello):** [link do quadro](https://trello.com/b/SEU-QUADRO). Cartões em `docs/kanban_trello.md`.
+- **Kanban (Trello):** [link do quadro](https://trello.com/b/Nd92qOdp/projeto-final-bi-b3-performance-2021-2023). Cartões em `docs/kanban_trello.md`.
 - **GitFlow:** `main` (produção) ← `develop` ← `feature/*`, com commits semânticos. Passo a passo em `docs/gitflow.md`.
 
 ## 10. Referências
@@ -242,7 +277,7 @@ streamlit run app.py
 - [Supabase](https://supabase.com/docs)
 - SHARPE, W. F. *The Sharpe Ratio*. Journal of Portfolio Management, 1994.
 - NIELSEN, J. *10 Usability Heuristics for User Interface Design*. Nielsen Norman Group.
-- **Uso de IA generativa:** [descreva aqui como você usou assistentes de IA, por exemplo na estruturação do código ou na revisão de textos, e o que você adaptou e validou]
+- **Uso de IA generativa:** este projeto contou com apoio do assistente Claude (Anthropic) na estruturação do código, do pipeline ETL e da documentação. A execução do ETL, a validação dos dados, o versionamento, o deploy e a análise dos resultados foram realizados pelo autor.
 
 ---
 *Projeto acadêmico, SENAI/SC. Dados públicos de mercado.*
