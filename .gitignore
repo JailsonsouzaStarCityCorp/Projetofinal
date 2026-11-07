@@ -1,0 +1,21 @@
+# Credenciais — NUNCA versionar
+.streamlit/secrets.toml
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Sistema
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Dados brutos (reproduzíveis pelo ETL). Os CSVs de data/processed/ SÃO versionados:
+# são a contingência do app no Streamlit Cloud.
+data/raw/*.csv
