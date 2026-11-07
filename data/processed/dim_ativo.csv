@@ -1,0 +1,13 @@
+id_ativo,ticker,ticker_yahoo,empresa,setor
+1,ABEV3,ABEV3.SA,Ambev,Consumo
+2,BBDC4,BBDC4.SA,Bradesco,Financeiro
+3,EGIE3,EGIE3.SA,Engie Brasil,Petróleo e Energia
+4,EMBR3,EMBJ3.SA,Embraer,Bens Industriais
+5,GGBR4,GGBR4.SA,Gerdau,Materiais Básicos
+6,ITUB4,ITUB4.SA,Itaú Unibanco,Financeiro
+7,KLBN11,KLBN11.SA,Klabin,Materiais Básicos
+8,PETR4,PETR4.SA,Petrobras,Petróleo e Energia
+9,PRIO3,PRIO3.SA,PRIO,Petróleo e Energia
+10,RENT3,RENT3.SA,Localiza,Consumo
+11,VALE3,VALE3.SA,Vale,Materiais Básicos
+12,WEGE3,WEGE3.SA,WEG,Bens Industriais
